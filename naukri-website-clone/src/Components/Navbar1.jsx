@@ -1,7 +1,7 @@
 
 import styles from "./Navbar.module.css"
 import { Link } from "react-router-dom"
-
+import { Button } from "@chakra-ui/react"
 export function Navbar() {
 
 
@@ -218,12 +218,13 @@ export function Navbar() {
                             </div>
                         </li> */}
                      
-
-                        <button style={{paddingTop:"10px", paddingBottom:"10px",paddingLeft:"25px",paddingRight:"25px", borderRadius:"23px", color:"blue",fontSize:"1rem",border:"0.5px solid blue",background:"none",margin:"5px" }}>Login</button>
+                     <Link to="/login">
+                        <button className={styles.login} >Login</button>
+                     </Link>
 
                         <Link to="/register">
 
-                        <button style={{paddingTop:"10px", paddingBottom:"10px",paddingLeft:"25px",paddingRight:"25px", borderRadius:"23px", color:"white",fontSize:"1rem",border:"none",background:'rgb(255,117,85)' }}>Register</button>
+                        <button className={styles.register}>Register</button>
                     
                         </Link>
                         <li className={styles.drop_four}>

@@ -5,15 +5,16 @@
     color:black;
     width:100%;
     margin:auto;
+  
    
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   
   }
   
   
   .header {
       width: 100%;
-      min-height: 100px;  
+    padding-bottom: 1%;
+      /* min-height: 35%;   */
       position: relative;
       font-family: HCoGothamSSmSemiBold, Arial, Sans-Serif;
       font-size: 12px;
@@ -45,7 +46,7 @@
    
     .navbar > li:hover {
       border-bottom: 3px solid #ffffff;
-      transition: 0.5s;
+      /* transition: 0.5s; */
     }
     
     .header span {
@@ -58,7 +59,7 @@
   
     span:hover{
       border-bottom: 3px solid #ffffff;
-      transition: 0.5s;
+      /* transition: 0.5s; */
     }
   
     .drop_one{
@@ -78,7 +79,7 @@
       display: flex;
       box-shadow: 0 0 3px rgb(216, 213, 213);
       padding-top: 10px; 
-      transition: 0.5s;
+      /* transition: 0.5s; */
       z-index: 100;
     
     }
@@ -106,7 +107,7 @@
     .menu_six > ul li:hover,
     .menu_seven > ul li:hover {
       border-bottom: 3px solid #2f82ab;
-      transition: 0.5s;
+      /* transition: 0.5s; */
       cursor: pointer;
     }
     
@@ -134,9 +135,9 @@
       
     }
     
-    .menu_five > ul li:hover {
+    /* .menu_five > ul li:hover {
       padding-bottom: 10px;
-    }
+    } */
     .menu_seven {
       margin-left: -250px;
       padding: 20px 30px;
@@ -157,5 +158,7 @@
     .navbar{
       top: 0;
     }
+
+   
 
    

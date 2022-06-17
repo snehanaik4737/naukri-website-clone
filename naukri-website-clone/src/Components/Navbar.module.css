@@ -159,3 +159,39 @@
     }
 
    
+
+    .login{
+
+      padding-top:10px;
+       padding-bottom:10px;
+       padding-left:25px;
+       padding-right:25px;
+        border-radius:23px;
+         color:blue;
+         font-size:1rem;
+         border:0.5px solid blue;
+         background:none;
+         margin:5px
+    }
+    .login:hover{
+      background-color: darkblue;
+      color:white
+    }
+
+    .register{
+     padding-top:10px;
+      padding-bottom:10px;
+      padding-left:25px;
+      padding-right:25px;
+       border-radius:23px;
+        color:white;
+        font-size:1rem;
+        border:none;
+        background:rgb(255,117,85)
+    }
+
+    .register:hover{
+      background-color:#ffffff;
+      color:black;
+      border:1px solid orangered
+    }
