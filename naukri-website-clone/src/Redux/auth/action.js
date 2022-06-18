@@ -91,6 +91,7 @@ export const registerFailure=(err)=>{
 
 
 const registerUser=(payload)=>(dispatch)=>{
+    console.log("payload",payload)
    const {name,email,mobile,password,description,username} =payload
  console.log(payload)
   const requestAction=registerRequest()

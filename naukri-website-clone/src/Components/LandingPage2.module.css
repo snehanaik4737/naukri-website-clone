@@ -90,12 +90,6 @@
     box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-/* marginTop={"2%"}
-paddingTop={"2%"}
-w={"100%"}
-marginLeft={"5%"}
-background={"white"}
-boxShadow={"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"} */
 
 .second_div_first_heading{
    
@@ -122,4 +116,76 @@ boxShadow={"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"} */
         margin-left: 2%;
         margin-bottom: 2%;
    
+}
+
+.sixth_div_first_box{
+    width:100%;
+     display:flex; 
+     padding:4%;
+}
+
+.credit_score{
+   
+        margin-right: 5%;
+        font-size: 30px;
+        font-weight: bold;
+     
+}
+.buy_credits{
+    padding:2%;
+
+    color:white;
+  
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+.last_div{
+    margin-top:10%;
+    margin-bottom:4%;
+    padding-top:2%;
+    width:100%;
+    margin-left:5%;
+    background:white;
+    box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.send_message{
+  
+        color: blue;
+        font-size: 17px;
+        text-align: center;
+     
+}
+
+.follow_btn{
+    color:blue;
+    border:1px solid blue;
+    font-size:15px;
+}
+.right_first_box{
+    width:100%;
+    margin-top:60%;
+    display:flex;
+    background:white;
+    box-shadow:
+      rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.right_second_div{
+    width:100%;
+    margin-top:20%;
+    padding:6%;
+    background:white;
+    box-shadow:
+      rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+}
+.right_third_div{
+    width:100%;
+    margin-top:20%;
+    padding:6%;
+    background:white;
+    box-shadow:
+      rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px
+    
 }

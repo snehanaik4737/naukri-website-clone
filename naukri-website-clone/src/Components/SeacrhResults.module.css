@@ -1,0 +1,15 @@
+.show_search_for_box{
+    width:100%;
+      box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.search_icon{
+   font-size:1.5rem;
+   margin-top:0.5%;
+   margin-right:2%;
+   color:rgb(74,144,226);
+}
+.heading_show_search_for{
+  font-size:1.1rem;
+  font-weight:bold;
+  color:rgb(74,144,226);
+}
