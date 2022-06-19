@@ -55,20 +55,23 @@ export const getJobFailure = (err) => {
     dispatch(getJobRequest())
 
     if (loc1 !== '') {
-        return axios.get('https://json-server-vedanshw.herokuapp.com/naukri', {
-            params: {
-                q: job,
-                 ...loc1
-                    
-              
+        axios({
+            url:'https://json-server-vedanshw.herokuapp.com/naukri',
+            method:'GET',
+            params:{
+              q:job,
+              ...loc1
             }
         })
             .then((res) => dispatch(getJobSuccess(res.data)))
             .catch((err) => dispatch(getJobFailure(err)))
     } else {
-        return axios.get('https://json-server-vedanshw.herokuapp.com/naukri', {
-            params: {
-                q: job
+        axios({
+            url:'https://json-server-vedanshw.herokuapp.com/naukri',
+            method:'GET',
+            params:{
+              q:job,
+             
             }
         })
             .then((res) => dispatch(getJobSuccess(res.data)))

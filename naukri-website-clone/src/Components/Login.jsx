@@ -24,6 +24,7 @@ export const Login=() =>{
 const disptach= useDispatch();
 const auth =useSelector((store)=>store.auth.isLogin)
   const [userEmail,setUserEmail] =useState("");
+  const [username,setUserName]=useState("");
   const [userPassword,setUserPassword]=useState("")
 const handleUserEmail=(e)=>{
 setUserEmail(e.target.value)
@@ -33,14 +34,21 @@ const handleUserPassword=(e)=>{
   setUserPassword(e.target.value)
 }
 
+const handleUserName=(e)=>{
+  setUserName(e.target.value)
+}
 
 const submitHandler=(e)=>{
  e.preventDefault();
- console.log(userEmail,userPassword)
-  disptach(loginUser({email:userEmail,password:userPassword}))
+// console.log(userEmail,userPassword)
+  disptach(loginUser({username:username,password:userPassword}))
 
 }
-console.log(location,"location")
+//console.log(location,"location")
+
+if(auth){
+  navigate("/home",{replace:true})
+}
 
 useEffect(()=>{
   if(location?.state?.pathname && auth){
@@ -68,6 +76,10 @@ useEffect(()=>{
           
           <Stack spacing={4}>
           <form onSubmit={submitHandler}>
+          <FormControl id="username" isRequired>
+              <FormLabel>User Name</FormLabel>
+              <Input type="username" value ={username}onChange={handleUserName} />
+            </FormControl>
             <FormControl id="email" isRequired>
               <FormLabel>Email address</FormLabel>
               <Input type="email" value ={userEmail}onChange={handleUserEmail} />
@@ -90,7 +102,8 @@ useEffect(()=>{
                 _hover={{
                   bg: 'blue.500',
                 }}
-                type="submit"
+              
+                 type="submit"
                 >
                Login
               </Button>

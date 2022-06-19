@@ -2,9 +2,9 @@
 import { actions } from "./action";
 
 const initState={
-    isLogin:false,
+    isLogin:(localStorage.getItem("isLogin")||false),
     token:"",
-    isAuth:false,
+    isAuth:(localStorage.getItem("isAuth")||false),
     message:"",
     isError:false,
     isLoading:true,
@@ -21,6 +21,9 @@ export const authReducer=(state=initState,action)=>{
             }
         }
         case actions.LOGIN_SUCCESS:{
+            localStorage.setItem("name",action.payload.name)
+            localStorage.setItem("isLogin",true)
+            console.log(action.payload.name)
             return {
                 ...state,
                 isLogin:true,
@@ -44,7 +47,8 @@ export const authReducer=(state=initState,action)=>{
         }
 
         case actions.REGISTER_SUCCESS:{
-            localStorage.setItem("name",action.payload.name)
+            localStorage.setItem("name",action.payload.name);
+            localStorage.setItem("isAuth",true)
             console.log("payload",action.payload)
             return {
                 ...state,

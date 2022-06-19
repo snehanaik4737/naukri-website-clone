@@ -17,10 +17,10 @@ export const loginRequest=()=>{
         
     }
 }
-export const loginSuccess=(data)=>{
+export const loginSuccess=(data,name)=>{
     return {
         type:actions.LOGIN_SUCCESS,
-        payload:data
+        payload:{data,name}
         
     }
 }
@@ -58,7 +58,7 @@ export const registerFailure=(err)=>{
 }
 
  const loginUser=(payload)=>(dispatch)=>{
-     // console.log(payload,"payload")
+     console.log(payload,"payload")
 
      const  {username,password}=payload
     const requestAction=loginRequest()
@@ -75,7 +75,7 @@ export const registerFailure=(err)=>{
           
         //  alert(res.data.token)
         alert("login Success")
-        const successAction =loginSuccess(res.data.token)
+        const successAction =loginSuccess(res.data.token,username)
        
           dispatch(successAction);
         
