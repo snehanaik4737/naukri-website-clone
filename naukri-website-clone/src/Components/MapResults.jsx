@@ -9,7 +9,7 @@ import { SingleMapDiv } from "./SingleMapDiv"
 import styled from "./MapResults.module.css"
 import { useParams, useSearchParams } from 'react-router-dom'
 import { useEffect } from 'react'
-import { getJobs, getJobsByLocation } from '../Redux/JobsSearching/action'
+import { getJobs, getJobsByLocation, getJobsBySalary } from '../Redux/JobsSearching/action'
 import { Footer } from './Footer'
 
  export const MapResults = () => {
@@ -35,7 +35,19 @@ import { Footer } from './Footer'
   },[dispatch,data?.length,searchParams])
 
   
+  // useEffect(()=>{
+  //   if(data?.length===0){
+  //     // let params={
+  //     //   location:searchParams.getAll("location"),
+        
+  //     // }
+  //     let salary={
+  //       salary:searchParams.getAll("salary")
+  //     }
+  //     dispatch(getJobsBySalary(job,salary))
 
+  //   }
+  // },[dispatch,data?.length,searchParams])
 
  
     if (data?.length === 0 && !loading) {
@@ -58,16 +70,7 @@ import { Footer } from './Footer'
       
         </>
     )
-    // ) :
-    //     (
-    //         <div className={styled.container}>
-    //             <div className={styled.box}>
-    //                 {
-    //                     [1, 2, 3, 4, 5].map(el => <SkeletonMapDiv key={el} />)
-    //                 }
-    //             </div>
-    //         </div>
-    //     )
+   
 }
 
 

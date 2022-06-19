@@ -44,25 +44,7 @@ export const getJobFailure = (err) => {
 
     .catch((err)=>dispatch(getJobFailure(err)))
 
-    // if (job !== '' && location !== '') {
-    //     return axios.get('https://json-server-vedanshw.herokuapp.com/naukri', {
-    //         params: {
-    //             q: job,
-    //             location: location
-    //         }
-    //     })
-    //         .then(res => dispatch(getJobSuccess(res.data)))
-    //         .catch(err => dispatch(getJobFailure()))
-    // }
-    // else if (job !== '' && location === '') {
-    //     return axios.get('https://json-server-vedanshw.herokuapp.com/naukri', {
-    //         params: {
-    //             q: job
-    //         }
-    //     })
-    //         .then(res => dispatch(getJobSuccess(res.data)))
-    //         .catch(err => dispatch(getJobFailure()))
-    // }
+    
 }
 
 
@@ -94,5 +76,38 @@ export const getJobFailure = (err) => {
     }
 }
 
+ const getJobsBySalary = (job, num) => (dispatch) => {
+    var gte; var lte
+    if (num === 0) { gte = 5000; lte = 30000 }
+    else if (num === 3) { gte = 30000; lte = 60000 }
+    else if (num === 6) { gte = 60000; lte = 100000 }
+    else if (num === 10) { gte = 100000; lte = 150000 }
 
-export {getJobs,getJobsByLocation}
+    dispatch(getJobRequest())
+
+    // if (location !== '') {
+         axios.get('https://json-server-vedanshw.herokuapp.com/naukri', {
+            params: {
+                q: job,
+                salary_gte: gte,
+                salary_lte: lte,
+                // ...loc1
+            }
+        })
+            .then(res => dispatch(getJobSuccess(res.data)))
+            .catch(err => dispatch(getJobFailure()))
+    // }
+    // else {
+    //     return axios.get('https://json-server-vedanshw.herokuapp.com/naukri', {
+    //         params: {
+    //             q: job,
+    //             salary_gte: gte,
+    //             salary_lte: lte
+    //         }
+    //     })
+    //         .then(res => dispatch(getJobSuccess(res.data)))
+    //         .catch(err => dispatch(getJobFailure()))
+    // }
+}
+
+export {getJobs,getJobsByLocation,getJobsBySalary}

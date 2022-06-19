@@ -156,7 +156,7 @@ navigate(`/search/${skill}`)
             <h2 className={styles.third_div_heading}>
               New Jobs in My Job Alerts
             </h2>
-            <div style={{ width: "100%", border: "1px solid gray" }}></div>
+            <div style={{ width: "100%",height:'1px', backgroundColor: 'rgb(192, 192, 192)' }}></div>
             <h3
               style={{ fontSize: "15px", color: "blue", textAlign: "center" }}
             >
@@ -169,7 +169,7 @@ navigate(`/search/${skill}`)
           <h4 className={styles.second_div_upper_heading}>Recruiters</h4>
           <Box className={styles.second_div}>
             <h2 className={styles.third_div_heading}>New Recruiter Messages</h2>
-            <div style={{ width: "100%", border: "1px solid gray" }}></div>
+            <div style={{ width: "100%", height:'1px', backgroundColor: 'rgb(192, 192, 192)'}}></div>
 
             <p style={{ textAlign: "center" }}>
               You do not have any unread message.
@@ -183,7 +183,7 @@ navigate(`/search/${skill}`)
 
           <Box className={styles.third_div}>
             <h2 className={styles.third_div_heading}>Recruiter Connections</h2>
-            <div style={{ width: "100%", border: "1px solid gray" }}></div>
+            <div style={{ width: "100%",height:'1px', backgroundColor: 'rgb(192, 192, 192)' }}></div>
 
             <Box className={styles.sixth_div_first_box}>
               <Box w={"40%"}>
@@ -215,7 +215,7 @@ navigate(`/search/${skill}`)
             <h2 className={styles.third_div_heading}>
               Recruiters hiring for candidates like you
             </h2>
-            <div style={{ width: "100%", border: "1px solid gray" }}></div>
+            <div style={{ width: "100%", height:'1px', backgroundColor: 'rgb(192, 192, 192)'}}></div>
 
             <Box className={styles.sixth_div_first_box}>
               <Box w={"15%"}></Box>
