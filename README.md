@@ -1,5 +1,5 @@
-# naukri-website-clone
-<h1>Gearbest Clone</h1>
+
+<h1>Naukri.com Clone</h1>
 <p>Hey👋, this is the cloning of one of the best job site in India named “Naukri.com”. This project was assigned to me in Unit 5 construct week in Masai School.Naukri.com is an Indian employment website provides hiring-related services in India and overseas.</p>
 <h3>Deploy Link : </h3>
 <a href="https://naukri-website-clone.netlify.app/">
