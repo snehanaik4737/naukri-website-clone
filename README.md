@@ -12,7 +12,7 @@ HTML | CSS | JavaScript | MERN | Redux | Chakra-UI
 <h3>Landing Page:</h3>
 <img src="https://miro.medium.com/max/1050/1*-1WyfUZtpbZBDDDKleEdJw.png" />
 
-<h4>I used the following resources:</h4>
+<h4>I used the following resources to build this project:</h4>
 
 ⬤ https://stackoverflow.com
 
